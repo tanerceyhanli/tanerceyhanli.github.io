@@ -330,7 +330,7 @@ plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#34;Numbe
 plt<span style=color:#f92672>.</span>xlabel(<span style=color:#e6db74>&#34;Predicted Date&#34;</span>, fontsize <span style=color:#f92672>=</span> fs)
 plt<span style=color:#f92672>.</span>title(<span style=color:#e6db74>&#34;Predicted Values vs Actual Values&#34;</span>, fontsize <span style=color:#f92672>=</span> fs)
 plt<span style=color:#f92672>.</span>show()
-</code></pre></div><p><img src=Bike-Share-Demand-Prediction_files/Bike-Share-Demand-Prediction_60_0.png alt=png></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e>#Features by importance</span>
+</code></pre></div><p><img src=output_60_0.png alt=png></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e>#Features by importance</span>
 <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>plot_importances</span>(model, model_name):
     importances <span style=color:#f92672>=</span> model<span style=color:#f92672>.</span>feature_importances_
     std <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>std([model<span style=color:#f92672>.</span>feature_importances_ <span style=color:#66d9ef>for</span> feature <span style=color:#f92672>in</span> model<span style=color:#f92672>.</span>estimators_],
@@ -388,7 +388,7 @@ plot_importances(rfr, <span style=color:#e6db74>&#34;RandomForestRegressor&#34;<
 31 events_Normal
 32 events_Rain
 33 events_Rain-Thunderstorm
-</code></pre><p><img src=Bike-Share-Demand-Prediction_files/Bike-Share-Demand-Prediction_61_1.png alt=png></p><h4 id=question-can-you-predict-the-demand-for-bikes-in-a-given-station-day-in-advance>Question: Can you predict the demand for bikes in a given station day in advance?</h4><p>If yes, what arethe main factors contributing to the predictions? Would this model be actionable to
+</code></pre><p><img src=output_61_1.png alt=png></p><h4 id=question-can-you-predict-the-demand-for-bikes-in-a-given-station-day-in-advance>Question: Can you predict the demand for bikes in a given station day in advance?</h4><p>If yes, what arethe main factors contributing to the predictions? Would this model be actionable to
 business? The model should be basic, the only requirement is that it should be
 interpretable.</p><h4 id=answer-yes>Answer: Yes</h4><p>Station, weekday/weekend info, number of docks, mean_temperature, day.
 If this model is improved, it can be actionable to business.
